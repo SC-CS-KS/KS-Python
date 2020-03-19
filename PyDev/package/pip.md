@@ -2,6 +2,9 @@
 
 通用的 Python 包管理工具。提供了对 Python 包的查找、下载、安装、卸载的功能。
 
+Pip是Python Packaging Authority推荐的用于从Python Package Index安装包的工具。 
+Pip安装打包为wheels或源代码分发的Python软件，后者可能要求系统安装兼容的编译器和库。
+
 ```bash
 easy_install pip //安装 pip
 pip install Markdown //安装 package
@@ -20,6 +23,18 @@ easy_install 是由 PEAK(Python Enterprise Application Kit) 开发的 setuptools
 
 ```bash
 yum install -y python3.x86_64
+pip3 install --upgrade pip
+```
+
+### 选项
+
+```text
+--target 指定安装目录
+    --target=/home/sunny/deploy/jupyter
+
+-i 指定包的下载源
+    -i https://pypi.tuna.tsinghua.edu.cn/simple
+
 ```
 
 ## pip 与 pip3
